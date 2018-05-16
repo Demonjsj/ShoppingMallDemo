@@ -1,0 +1,24 @@
+<!--pages/shopcart/shopcart.wxml-->
+<view class='asdasd'>
+  <view class='cart_item' wx:for="{{cartList}}">
+    <view class='img_left'>
+      <image src='/images/s2.png' class='choice_img' />
+    </view>
+    <image src='{{item.img}}' class='goods_img'></image>
+    <view class='goods_info'>
+      <view class='goods_top'>
+        <view class='goods_name'>{{item.goods_name}}</view>
+        <view class='goods_price'>{{item.goods_price}}</view>
+      </view>
+      <view class='goods_kind'>{{item.goods_kind}}</view>
+      <view class='goods_mount'>
+        <view class='re_up'>
+          <view class='reduce_sign'>-</view>
+          <view class='amount'>1</view>
+          <view class='up_sign'>+</view>
+        </view>
+        <image src='/images/icon-delete.png' class='img_delete'></image>
+      </view>
+    </view>
+  </view>
+</view>

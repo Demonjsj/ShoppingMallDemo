@@ -1,0 +1,75 @@
+<!--index.wxml-->
+<view class='all_content'>
+  <swiper indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='toutiao'>
+    <image src='/images/headline.png' class='headline' />
+    <view class='line'></view>
+    <text class='content'>缤纷圣诞季,圣诞节礼物送她颜值高的</text>
+  </view>
+
+  <view class='item'>
+    <view class='item_title'>{{kindList[0].title}}</view>
+    <image src="{{kindList[0].img}}" class='image_shop'></image>
+    <view class='bottom'>
+      <view class='goods' wx:for="{{proList}}">
+        <image src="{{item.proimg}}" class='img_vegetable'></image>
+        <view class='price'>{{item.proprice}}</view>
+        <view class='amount'>{{item.proamount}}</view>
+      </view>
+    </view>
+  </view>
+
+   <view class='item'>
+    <view class='item_title'>{{kindList[1].title}}</view>
+    <image src="{{kindList[1].img}}" class='image_shop'></image>
+    <view class='bottom'>
+      <view class='goods' wx:for="{{proList_oil}}">
+        <image src="{{item.proimg}}" class='img_vegetable'></image>
+        <view class='price'>{{item.proprice}}</view>
+        <view class='amount'>{{item.proamount}}</view>
+      </view>
+    </view>
+  </view> 
+
+  <view class='item'>
+    <view class='item_title'>{{kindList[2].title}}</view>
+    <image src="{{kindList[2].img}}" class='image_shop'></image>
+    <view class='bottom'>
+      <view class='goods' wx:for="{{proList_local}}">
+        <image src="{{item.proimg}}" class='img_vegetable'></image>
+        <view class='price'>{{item.proprice}}</view>
+        <view class='amount'>{{item.proamount}}</view>
+      </view>
+    </view>
+  </view> 
+
+<view class='item'>
+    <view class='item_title'>{{kindList[3].title}}</view>
+    <image src="{{kindList[3].img}}" class='image_shop'></image>
+    <view class='bottom'>
+      <view class='goods' wx:for="{{proList_tea}}">
+        <image src="{{item.proimg}}" class='img_vegetable'></image>
+        <view class='price'>{{item.proprice}}</view>
+        <view class='amount'>{{item.proamount}}</view>
+      </view>
+    </view>
+  </view> 
+
+  <view class='item'>
+    <view class='item_title'>{{kindList[4].title}}</view>
+    <image src="{{kindList[4].img}}" class='image_shop'></image>
+    <view class='bottom'>
+      <view class='goods' wx:for="{{proList_import}}">
+        <image src="{{item.proimg}}" class='img_vegetable'></image>
+        <view class='price'>{{item.proprice}}</view>
+        <view class='amount'>{{item.proamount}}</view>
+      </view>
+    </view>
+  </view> 
+</view>

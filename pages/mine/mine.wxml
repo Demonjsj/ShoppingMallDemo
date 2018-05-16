@@ -1,0 +1,38 @@
+<!--pages/mine/mine.wxml-->
+<view class='page_mine'>
+  <view class='page_hd'>
+    <view class='person_img'>
+      <image src='/images/defult_userimg.png' class='default_userimg'></image>
+      <text class='per_name'>xf_4072025</text>
+    </view>
+    <view class='order_info'>
+      <view class='pre_pay'>待付款</view>
+      <view class='split_line'></view>
+      <view class='refund_sale'>退款 / 售后</view>
+    </view>
+  </view>
+  <view class='page_content'>
+    <view class='item'>
+      <image src='/images/m2.png' class='order_img'></image>
+      <text class='myorder'>我的订单</text>
+    </view>
+    <view class='item'>
+      <image src='/images/m6.png' class='order_img'></image>
+      <text class='myorder'>我的地址</text>
+    </view>
+
+     <view class='item aaa'>
+      <image src='/images/m16.png' class='order_img'></image>
+      <text class='myorder'>客服中心</text>
+    </view>
+    <view class='item'>
+      <image src='/images/m13.png' class='order_img'></image>
+      <text class='myorder'>修改密码</text>
+    </view>
+  </view>
+
+  <view class='page_bottom'>
+  <view class='hint'>关注微信服务号获取订单最新状态!</view>
+  <button class='cancle'>注销</button>
+  </view>
+</view>
